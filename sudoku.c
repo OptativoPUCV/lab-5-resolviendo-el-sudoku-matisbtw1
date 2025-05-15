@@ -60,9 +60,9 @@ List* get_adj_nodes(Node* n){
               for (int i = 1; i <= 9; i++){
                     Node* new = copy(n);
                     new->sudo[j][k] = i;
-                    if (is_valid(new)){
-                        pushBack(lista_adj, new);
-                    }
+
+                    pushBack(lista_adj, new);
+                    
                 }
                 return lista_adj;
             }
