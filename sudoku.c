@@ -46,29 +46,7 @@ void print_node(Node* n){
 int is_valid(Node* n){
 
   int arr[10];
-    // Verificar filas
-    for (int j = 0; j < 9; j++){
-        for (int i = 0; i < 10; i++) arr[i] = 0;
-        for (int k = 0; k < 9; k++){
-            int val = n->sudo[j][k];
-            if (val != 0){
-                if (arr[val]) return 0;
-                arr[val] = 1;
-            }
-        }
-    }
 
-    // Verificar columnas
-    for (int k = 0; k < 9; k++){
-        for (int i = 0; i < 10; i++) arr[i] = 0;
-        for (int j = 0; j < 9; j++){
-            int val = n->sudo[j][k];
-            if (val != 0){
-                if (arr[val]) return 0;
-                arr[val] = 1;
-            }
-        }
-    }
 
     // Verificar submatrices 3x3
     for (int k = 0; k < 9; k++){
