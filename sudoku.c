@@ -52,7 +52,7 @@ int is_valid(Node* n){
     for (j = 0; j < 9; j++){
         for (k = 0; k < 9; k++){
             if (n->sudo[j][k] != 0){
-                if (arr[n->sudo[k][j]] == 1){
+                if (arr[n->sudo[j][k]] == 1){
                     return 0;
                 }
                 arr[n->sudo[j][k]] = 1;
@@ -60,7 +60,7 @@ int is_valid(Node* n){
         }
         //resetear el array
         for (int i = 0; i < 10; i++){
-            arr[i] = 0;
+            arr[i] = 0;n
         }
     }
 

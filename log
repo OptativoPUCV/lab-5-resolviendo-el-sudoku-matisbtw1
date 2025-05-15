@@ -80,3 +80,17 @@ Thu, May 15, 2025  4:14:39 PM:
  tests:  2|4
 total_score: 15/70
 4ea869d
+Thu, May 15, 2025  4:16:50 PM: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'is_valid':
+sudoku.c:63:24: error: statement with no effect [-Werror=unused-value]
+             arr[i] = 0;n
+                        ^
+sudoku.c:64:9: error: expected ';' before '}' token
+         }
+         ^
+cc1.exe: all warnings being treated as errors
+10e4da2
