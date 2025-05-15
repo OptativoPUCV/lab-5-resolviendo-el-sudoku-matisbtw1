@@ -52,7 +52,7 @@ int is_valid(Node* n){
     for (j = 0; j < 9; j++){
         for (k = 0; k < 9; k++){
             if (n->sudo[j][k] != 0){
-                if (arr[n->sudo[j][k]] == 1){
+                if (arr[n->sudo[k][j]] == 1){
                     return 0;
                 }
                 arr[n->sudo[j][k]] = 1;
