@@ -45,7 +45,23 @@ void print_node(Node* n){
 
 int is_valid(Node* n){
 
+    int j,k;
+    //array con 10 0s
+    int arr[10] = {0};
+    //verificar filas
+    for (j = 0; j < 9; j++){
+        for (k = 0; k < 9; k++){
+            if (n->sudo[j][k] != 0){
+                if (arr[n->sudo[j][k]] == 1){
+                    return 0;
+                }
+                arr[n->sudo[j][k]] = 1;
+            }
+        }
+
+
     return 1;
+}
 }
 
 
