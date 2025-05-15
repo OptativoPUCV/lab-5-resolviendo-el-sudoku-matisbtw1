@@ -58,11 +58,15 @@ int is_valid(Node* n){
                 arr[n->sudo[j][k]] = 1;
             }
         }
-
+        //resetear el array
+        for (int i = 0; i < 10; i++){
+            arr[i] = 0;
+        }
+    }
 
     return 1;
 }
-}
+
 
 
 List* get_adj_nodes(Node* n){

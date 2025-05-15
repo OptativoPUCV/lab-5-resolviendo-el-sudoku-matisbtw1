@@ -68,3 +68,9 @@ sudoku.c:65:1: error: control reaches end of non-void function [-Werror=return-t
  ^
 cc1.exe: all warnings being treated as errors
 ccb5976
+Thu, May 15, 2025  4:13:48 PM: 
+ sudoku.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+ tests:  5|3
+total_score: 35/70
+79c0269
