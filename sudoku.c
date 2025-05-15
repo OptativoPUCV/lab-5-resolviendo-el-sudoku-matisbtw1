@@ -46,7 +46,7 @@ void print_node(Node* n){
 int is_valid(Node* n){
 
   int arr[10];
-    // Verificar filas
+    // verificar filas
     for (int j = 0; j < 9; j++){
         for (int i = 0; i < 10; i++) arr[i] = 0;
         for (int k = 0; k < 9; k++){
@@ -58,7 +58,7 @@ int is_valid(Node* n){
         }
     }
 
-    // Verificar columnas
+    // verificar columnas
     for (int k = 0; k < 9; k++){
         for (int i = 0; i < 10; i++) arr[i] = 0;
         for (int j = 0; j < 9; j++){
@@ -70,7 +70,7 @@ int is_valid(Node* n){
         }
     }
 
-    // Verificar submatrices 3x3
+    // verificar submatrices 3x3
     for (int k = 0; k < 9; k++){
         for (int i = 0; i < 10; i++) arr[i] = 0;
         for (int p = 0; p < 9; p++){
@@ -131,6 +131,9 @@ int is_final(Node* n){
 }
 
 Node* DFS(Node* initial, int* cont){
+  
+  
+  
   return NULL;
 }
 
