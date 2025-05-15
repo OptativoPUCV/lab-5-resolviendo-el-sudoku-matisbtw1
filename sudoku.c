@@ -80,8 +80,9 @@ List* get_adj_nodes(Node* n){
               for (int i = 1; i <= 9; i++){
                     Node* new = copy(n);
                     new->sudo[j][k] = i;
-
-                    pushBack(lista_adj, new);
+                    if (is_valid(new)){
+                        //printf("valid\n");
+                    pushBack(lista_adj, new);}
                     
                 }
                 return lista_adj;
