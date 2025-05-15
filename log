@@ -2,3 +2,26 @@ Thu, May 15, 2025  3:50:57 PM:
  tests:  0|5
 total_score: 0/70
 3f0e54c
+Thu, May 15, 2025  3:59:56 PM: 
+ sudoku.c | 20 ++++++++++++++++++--
+ 1 file changed, 18 insertions(+), 2 deletions(-)
+Compilation failed
+test.c: In function 'get_adj_nodes':
+test.c:245:5: error: 'main' is normally a non-static function [-Werror=main]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+test.c:262:1: error: expected declaration or statement at end of input
+ }
+ ^
+test.c:262:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+At top level:
+test.c:245:5: error: 'main' defined but not used [-Werror=unused-function]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+test.c:7:8: error: '_strdup' defined but not used [-Werror=unused-function]
+ char * _strdup(const char * str) {
+        ^~~~~~~
+cc1.exe: all warnings being treated as errors
+862e1e8
